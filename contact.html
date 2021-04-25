@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+    <header>
+        <h1 class="nav-titre">Les Films de Plein Air</h1>
+        <nav>
+            <label for="menu-mobile" class="menu-mobile">Menu</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+             <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="les-films.html">Films</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="index.html#reservation">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+             </ul>
+        </nav>
+    </header>
+    <section class="contact-form">
+            <h2 class="titre-contact">CONTACT</h2>
+            <form action="contact.html">
+                <label for="nameinput">Nom</label>
+                <input type="text" name="firstname" id="nameinput" class="inputnom">
+                <label for="prenominput">Prénom</label>
+                <input type="text" name="prenom" id="prenominput" class="inputprenom"><br><br>
+                <label for="emailinput">Email</label>
+                <input type="text" name="email" id="emailinput" class="inputmail"><br><br>
+                <textarea placeholder="Votre message" class="inputext"></textarea>
+                <button>Envoyer</button><br>
+                <input type="checkbox" class='chek-form'> J'accepte que mes données personnelles soit utilisé à des fins commerciales
+            </form>
+    </section>
+    <section class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873738203499!2d2.306766315184758!3d48.87968347928956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1587305879204!5m2!1sfr!2sfr!frameborder=" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <section class="main-foot">
+            <div class="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="les-films.html">Films</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="index.html#reservation">Réservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Adresse: 200 rue machin, 75000</li>
+                    <li>Email: contact@filmdepleinair.com</li>
+                    <li>Tel: 06 00 00 00 00</li>
+                </ul>
+            </div>
+            <div class="reseaux">
+                <h2>Suivez-nous</h2>
+                    <img src="img-p3/facebook2.png" alt="logo facebook">
+                    <img src="img-p3/insta-noir.png" alt="logo instagram">
+                    <img src="img-p3/twitter.png " alt="logo twitter">
+            </div>
+    </section>
+    <footer>
+        <p>Copyright 2020-projet 3-site fictif<br>Parcours développeur Front-end-OpenClassroom</p>
+    </footer>
+</body>
+</html>

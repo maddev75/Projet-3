@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les Films De Plein Air</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <h1 class="titre-principal">Les Films de Plein Air</h1>
+        <nav>
+            <label for="menu-mobile" class="menu-mobile">Menu</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="les-films.html">Films</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <figure class="banniere">
+        <img src="img-p3/banniere.jpg" alt="photo festival">
+    </figure>
+    <section class="titrage">
+        <h2>Bienvenue au festival <br>les films de plein air</h2>
+        <p>Du 5 au 8 aout 2020 vos films d'auteurs préférés au parc Monceau a Paris</p>
+    </section>
+    <section class="presentation">
+        <h2>Présentation</h2>
+        <p class="para-presentation">
+        L'association les films de plein air vous présente son 1er festival qui se déroulera du 5 au 8 aout 2020.<br><br>
+        En soirée à partir de 18h jusqu'a minuit, nous vous proposons une projection de films en plein air au parc Monceau de Paris.<br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reprehenderit fugiat unde ex cum! Voluptates maxime nisi laboriosam<br><br> perferendis esse in at, necessitatibus impedit voluptatum! Perspiciatis repudiandae saepe ratione deleniti.
+            L'accès sera gratuit, et ouvert à tous, alors réservez dès maintenant vos séances pour ne pas manquer de places!</p>
+    </section>
+    <section class="actualites">
+        <h2>Actualités</h2>
+        <p class="para-actu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa? Dolore ex modi unde sequi nam, quisquam totam nisi ad quaerat itaque quis laudantium ea sed qui esse aliquam accusantium!... Paru le 20.05.2020<br><button class="btn-article">Voir l'article</button></p>
+        <p class="para-actu">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et suscipit commodi, labore alias repudiandae aperiam consequuntur minima voluptatibus. Excepturi fugit deserunt ab consequuntur eligendi similique modi! Voluptates tenetur ipsum sint...<br>Paru le 15.05.2020<br><button class="btn-article">Voir l'article</button></p>
+    </section>
+    <section class="films">
+        <h2 class="titre-film">A partir du 5 Aout dès 18h</h2>
+        <div class="img-film">
+            <div><h3>Ratatouille 18h/20h</h3><img src="img-p3/ratatouille.jpg" alt='affiche ratatouille'></div>
+            <div><h3>Zootopie 20h/22h</h3><img src="img-p3/zootopie.jpg" alt= 'affiche zootopie'></div>
+            <div><h3>Baby-Boss 22h/00h</h3><img src="img-p3/baby-boss.jpg" alt='affiche baby-boss'></div>
+        </div>
+    </section>
+    <section id="reservation">
+        <h2 class="titre-reserv">Je réserve ici</h2>
+        <form action="reserv.html">
+            <label for="name-input">Nom Prénom</label>
+            <input class="input-name" type="text" name="firstname" id="name-input">
+            <label for="email-input">Email</label>
+            <input class="input-email" type="text" name="email" id="email-input">
+            <label for="nb-place-input" >Nombre de places</label>
+            <input class="input-place" type="text" name="nb-place" id="nb-place-input">
+            <select class="select" name="film">
+            <optgroup label="05/08/20">
+                <option value="Ma séance">Ma séance</option>
+                <option value="18h30-Ratatouilles">18h30-Ratatouilles</option>
+                <option value="Zootopie">20h30-Zootopie</option>
+                <option value="Baby Boss">22h30-BabyBoss</option>
+            </optgroup>
+            <optgroup label="06/08/20">
+                <option value="101 dalmatiens">18h30-101 dalmatiens</option>
+                <option value="le livre de la jungle">20h30-Le livre de la jungle</option>
+                <option value="le monde de nemo">22h30-Le monde de nemo</option>
+            </optgroup>
+            <optgroup label="07/08/20">
+                <option value="Toys story">18h30-Toys story</option>
+                <option value="cars">20h30-Cars</option>
+                <option value="shrek">22h30-Shrek</option>
+            <optgroup label="08/08/20">
+                <option value="Moi, moche et méchant">18h30-Moi, moche et méchant</option>
+                <option value="tarzan">20h30-Tarzan</option>
+                <option value="shrek">22h30-Peter Pan</option>
+            </optgroup>
+            </select>
+        </form>
+    </section>
+    <section class="main-foot">
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="les-films.html">Films</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="index.html#reservation">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>     
+        </div>
+        <div class="contact">
+           <h2>Contact</h2>
+            <ul>
+                <li>Adresse: 200 rue machin, 75000</li>
+                <li>Email: contact@filmdepleinair.com</li>
+                <li>Tel: 06 00 00 00 00</li>
+            </ul>
+        </div>
+        <div class="reseaux">
+            <h2>Suivez-nous</h2>
+            <img src="img-p3/facebook2.png " alt='logo facebook'>
+            <img src="img-p3/insta-noir.png" alt='logo instagram'>
+            <img src="img-p3/twitter.png " alt= 'logo twitter'>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2020-projet 3-site fictif<br>Parcours développeur Front-end-OpenClassroom</p>
+    </footer>
+</body>
+</html>

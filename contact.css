@@ -1,0 +1,174 @@
+@font-face{
+    font-family: "Playball";
+    src: url('fonts/Playball.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face {  
+    font-family: 'MaidenOrange';
+    src: url('fonts/MaidenOrange.ttf') format("truetype");
+    font-weight: normal;
+}
+body {
+    margin: 0rem;
+    padding:0rem;
+    color: #424242;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:   
+                        "header"
+                        "contact"
+                        "google-map"
+                        "main-foot"
+                        "footer"
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration-line: none;
+    color: #424242;
+}
+header {
+    grid-area: header;
+    background-color:#FFF3E0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    display:flex;
+    justify-content: space-around;
+}
+    nav li {
+        margin-right: 5rem;
+        list-style-type: none;
+        font-size: 2.5rem;
+        font-family: "playball";
+}
+    .nav-titre {
+        font-size: 3.5rem;
+        font-family: "playball";
+        }
+    
+.contact-form {
+    grid-area: contact;
+    background-color: #FFE0B2;
+    font-size: 2rem;
+    width: 100%;
+}
+form {
+       padding: 3rem;
+    
+}
+    .titre-contact {
+        font-size: 3.5rem;
+        font-family: "playball";
+        padding-left: 3rem;
+    }
+    
+        
+    .inputnom {
+        padding: 0.5rem;
+        width: 30rem;
+        border-radius: 0.3rem;
+        border:none;
+    }
+    .inputprenom {
+        padding: 0.5rem;
+        width: 30rem;
+        border-radius: 0.3rem;
+        border:none;
+    }
+    .inputmail {
+        padding: 0.5rem;
+        width: 80%;
+        border-radius: 0.3rem;
+        border:none;
+    }
+    .inputext {
+        width: 85%;
+        height: 30rem;
+        border-radius: 0.3rem;
+        border: none;
+    }
+    button { 
+        padding: 1rem;
+        border-radius: 0.2rem;
+        border: none;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    button:hover {
+        transform: scale(1.01);
+    }
+.google-map {
+    grid-area: google-map;
+    background-color: #FFE0B2;
+    }
+    iframe {
+        width: 80%;
+        height: 20rem;
+        padding: 4rem;
+    }
+.main-foot {
+        grid-area: main-foot;
+        background-color: #FFCC80;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        font-family: "playball";
+}
+    .main-foot ul, li {
+        list-style-type: none;
+        padding: 0;
+    }
+    .reseaux img {
+        width: 3rem;
+    }
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color:#FFB74D;
+    font-size: 1.5rem;
+}
+nav label {
+    display: none
+}
+#menu-mobile {
+    display: none;
+}
+/*de smartphone et tablette*/
+@media screen and (max-width: 992px) {
+   nav label {
+        display: block;
+        background-color:#FFF3E0;
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: "playball";
+        padding: 1.2rem 0rem;
+    }
+        nav input[type=checkbox]:checked ~ ul {
+            display: block;
+        }
+        nav ul, .nav-titre {
+            display: none;
+        }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+       button {
+            width: 10rem;
+        }
+    .main-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .main-foot div {
+            width: 18rem;
+        }
+}

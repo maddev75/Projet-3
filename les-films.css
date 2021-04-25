@@ -1,0 +1,192 @@
+@font-face{
+    font-family: "Playball";
+    src: url('fonts/Playball.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face {  
+    font-family: 'MaidenOrange';
+    src: url('fonts/MaidenOrange.ttf') format("truetype");
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding:0;
+    color: #424242;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;   
+    grid-template-areas:   "header"
+                            "les-films"
+                            "main-foot"
+                            "footer"
+}
+a {
+        text-decoration-line: none;
+        color: #424242;
+}
+header {
+        grid-area: header;
+        background-color: #FFF3E0;;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+}
+    nav ul {
+        display:flex;
+        justify-content: space-around;
+    }
+    nav {
+        padding-right: 3rem;
+    }
+    .nav {
+        margin-right: 5rem;
+        list-style-type: none;
+        font-size: 2.5rem;
+        font-family: "playball";
+    }
+    .nav-titre {
+        font-size: 3.5rem;
+        font-family: "playball";
+    }
+.les-films {
+    grid-area: les-films;
+}
+    .annonce {
+        text-align: center;
+        padding: 5rem;
+        background-color: #FFB74D;
+        font-family: "playball";
+        font-size: 3rem;
+    }
+    .les-films div {
+        font-size: 2.5rem;
+        font-family: "playball";
+    }
+    .list1 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.8rem;
+    }
+    .list1 img {
+        width : 30rem;
+        height: 40rem;
+    }
+    .list2 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.8rem;
+    }
+    .list2 img {
+        width : 30rem;
+        height: 40rem;
+    }
+    .list3 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.8rem;
+    }
+    .list3 img {
+        width : 30rem;
+        height: 40rem;
+    }
+    .list4 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.8rem;
+    }
+    .list4 img {
+        width : 30rem;
+        height: 40rem;
+    }
+.main-foot {
+    grid-area: main-foot;
+    background-color: #FFCC80;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: "playball";
+}
+    .main-foot ul, li {
+        list-style-type: none;
+        padding: 0;
+    }
+    .reseaux img {
+        width: 3rem;
+    }
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #FFB74D;
+    font-size: 1.5rem;
+}
+nav label {
+    display: none
+}
+#menu-mobile {
+    display: none;
+}
+
+/*De smartphone et tablette*/
+@media screen and (max-width: 1100px) {
+    html { 
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 960px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:    
+                            "header"
+                            "les-films"
+                            "main-foot"
+                            "footer"
+    }
+    header nav label {
+        display: block;
+        background-color:#FFF3E0 ;
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: "playball";
+        padding: 1.2rem 0rem;
+    }
+        nav input[type=checkbox]:checked ~ ul {
+            display: block;
+        }
+        nav ul, .nav-titre {
+            display: none;
+        }
+   form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        form input, select {
+            width: 50%;
+        }
+    .les-films div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+        .main-foot div {
+            width: 18rem;
+        }
+}
+@media screen and (max-width: 426px) {
+    html {
+        font-size: 55%;
+    }
+}
